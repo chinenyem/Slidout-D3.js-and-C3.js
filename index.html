@@ -1,0 +1,149 @@
+<!DOCTYPE>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Cool Charts</title>
+		<link rel="stylesheet" href="css/styles.css">
+		<!-- Latest compiled and minified CSS -->
+	     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	     <!--c3 stylesheet -->
+	     <link rel="stylesheet" href="js/c3folder/c3.css" type="text/css">
+	</head>
+	<body>
+
+
+		
+	<input type="checkbox" id="sidebartoggler" name="" value=""/>
+
+		<div class="page-wrap">
+			<label for="sidebartoggler" class="toggle">≣</label>
+
+			<!-- <a href="#" class="toggle">≣</a> -->
+			
+		
+			<div class="page-content">
+				<article class="Home">
+					<h1>Interactive Charts</h1>
+					<hr>
+					
+				</article>
+				<article class="About" id="about_part">
+					<p>
+						This is fun practice for <a href ="http://c3js.org/">C3</a>.js. It's my first time learning how to create charts using C3.js and <a href="http://d3js.org/">D3.js</a>. I've seen some pretty cool examples.
+
+						<br>
+						<br>
+
+						C3 makes it easy to generate D3-based charts by wrapping the code required to construct the entire chart. We don't need to write D3 code any more. C3 gives some classes to each element when generating, so you can define a custom style by the class and it's possible to extend the structure directly by D3.C3 provides a variety of APIs and callbacks to access the state of the chart. By using them, you can update the chart even after it's rendered.
+
+						<br>
+						<br>
+
+					</p>
+					
+				</article>
+				
+
+				<article class="title" id="line_chart_article">
+					<h3>C3.js Chart</h3>
+					<p>Line Chart</p>
+				</article>
+
+				<article id="chart">
+					<!-- c3 chart will appear -->
+				</article>
+				
+				<article class="title" id="custom_chart_article">
+					<h3>C3.js Chart</h3>
+					<p>Custom Line, bar  Chart</p>
+				</article>
+				
+
+				<article id="chart4" >
+					<section class='chart4'>
+					<!-- c3 chart will appear -->
+				    </section>
+				</article>
+
+				<article class="title" id="donut_chart_article">
+					<h3>C3.js Chart</h3>
+					<p>Donut  Chart</p>
+				</article>
+
+
+				<article id="chart5">
+					<!-- c3 chart will appear -->
+				</article>
+
+
+				<!-- <article class="d_three">
+					<section>
+						<img src="https://farm3.staticflickr.com/2925/14189303799_e984709bd4_b.jpg">
+					</section>
+				</article>
+				<article class="c_three">
+					<section>
+						<img src="https://download.unsplash.com/photo-1429277005502-eed8e872fe52">
+					</section>
+				</article> -->
+
+
+				<div id="container" class="container">
+				    <header>
+				    <h1 id="Gates_chart">Gates Foundation Educational Spending</h1>
+				    </header>
+					    <div id="main" role="main">
+					      <div id="view_selection" class="btn-group">
+					        <a href="#" id="all" class="btn active">All Grants</a>
+					        <!-- <a href="#" id="year" class="btn">Grants By Year</a> -->
+					      </div>
+					      <div id="vis"></div>
+					    </div>
+  			</div> 
+
+				<!-- <article id="chart6" style="display: inline-block;
+            width: 20px;
+            height: 75px;
+            background-color: teal;">
+					
+					
+				</article> -->
+
+				<article id="chart9">
+					
+					
+				</article>
+		</div>
+
+
+			<div class="sidebar">
+				<ul>
+					<a href="#" id="about"><li id="about">About</li></a>
+					<li id="chart_c3">C3 Chart</li>
+						<ul id="sub_chartc3">
+							<a href="#" id="line_chart"><li class="small"> Line Chart </li></a>
+							<a href="#" id="custom_chart"><li class="small"> Custom Chart </li></a>
+							<a href="#" id="donut_chart"><li class="small"> Donut Chart </li></a>
+						</ul>
+					<li id="chart_d3">D3 Chart</li>
+						<ul id="sub_chartd3">
+							<a href="#" id="circle_chart"><li class="small"> Circle Chart </li></a>
+						</ul>
+				</ul>
+			</div>
+
+		</div>
+
+
+
+	
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+	<script src="js/bower_components/d3/d3.min.js"></script>
+	<script type="text/javascript" src="js/c3folder/c3.min.js"></script>
+	<script type="text/javascript" src="js/c3_script.js"></script>
+	<script type="text/javascript" src="js/d3_script.js"></script>
+	<script type="text/javascript" src= "js/CustomTooltip.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+	</body>
+</html>

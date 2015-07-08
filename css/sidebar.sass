@@ -1,0 +1,159 @@
+@import 'bourbon/bourbon'
+@import url(http://fonts.googleapis.com/css?family=Lora)
+
+
+
+a, a:link, a:visited, a:active, a:hover
+	text-decoration: none
+
+
+article #chart6 
+	display: inline-block
+	width: 20px
+	height: 75px   /* We'll override this later */
+	background-color: teal
+
+#sub_chartc3
+	display: none
+	height: 105px
+	width: 96px
+
+#sub_chartd3
+	display: none
+	height: 105px
+	width: 96px
+
+
+
+.container
+	+transition(all 1.5s)
+	margin-right: -11% !important
+	margin-top: 4em !important
+	margin-left: 25em
+
+.toggle
+	text-decoration: none
+	font-size: 30px
+	color: black
+	+transition(all 1.5s)
+	+position(fixed, -1px 0 40 1em)
+	z-index: 1
+	&:hover
+		text-decoration: none
+
+
+.page-content
+	position: relative
+	+transition(all 1.5s)
+	z-index: 0
+	margin-left: 2em
+	font-family: 'Lora', serif
+
+.title
+	text-align: center
+	margin: 6%
+
+.home
+	text-align: center
+	margin: 3em
+hr
+	border: 0
+	height: 1px
+	background: #333
+	background-image: linear-gradient(to right, #ccc, #333, #ccc)
+	width: 36em
+
+.about
+	text-align: justify
+	@include margin(null 24em 6em 25em)
+	// margin-left: 23em
+	// margin-right: 24em
+	// margin-bottom: 6em
+
+
+
+#chart, #chart4, #chart6
+	margin-left: 19%
+
+
+	
+
+.c_three, .d_three, #chart 
+	margin-top: 2em
+	section, .chart4
+		padding: 3em
+		//border: outset
+		@include border-style(solid)
+		@include border-width(1px)
+		@include margin(null 16em null 16em)
+		@include border-color(#D4D9DE)
+		// margin-right: 16em
+		// margin-left: 16em
+	img
+		height: 100%
+		width: 89%
+		margin-left: 3em
+		
+
+.sidebar
+	+position(fixed, 0px 0 0px -190px)
+	+transition(all 1.5s)
+	width: 140px
+	padding: 30px
+	padding-left: 1%
+	background: rgb(255,255,255)
+	z-index: 0
+	border-right: thin solid #333
+
+ul
+	list-style-type:none
+	list-style-type: none
+	padding-left: 1em
+
+	li
+		color: rgba(0,0, 0, 1)
+		width: 7em
+		line-height: 35px
+		font-family: 'Lora', serif
+		font-size: 15px
+		-webkit-font-smoothing: antialiased
+		cursor: pointer
+
+		#sub_chartc3, #sub_chartd3
+			margin-left: 14%
+
+	
+
+		.small
+			font-size: 13px
+
+
+		&:hover 
+			color: rgba(0,0,0, .5)
+
+#sidebartoggler
+	display: none
+
+	&:checked + .page-wrap
+
+		.sidebar
+			left: 0px
+
+		.toggle
+			left: 200px
+
+		.page-content
+			padding-left: 120px
+
+
+
+
+
+
+
+
+
+
+
+
+
